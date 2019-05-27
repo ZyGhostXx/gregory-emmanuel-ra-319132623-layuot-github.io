@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#busca {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+#txtbusca {
+    display: flex;
+    align-content: center;
+    border: 0px solid #222;
+    background: #EEE;
+    width: 500px;
+    height: 30px;
+    margin: 0px;
+    padding: 5px 0 5px 5px;
+    float: left;
+    line-height: 36px; 
+}
+
+#btnBusca {
+    display: flex;
+    align-content: center;
+    background: #00cccc;
+    position: relative;
+    border: 0px solid #222;
+    color: #FFF; 
+    margin: 0px;
+    padding: 6px;
+    border: 0 none;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform :uppercase;
+}
+
+#btnBusca:hover {   
+    display: flex;
+    align-content: center;
+    background:#99cccc; 
+}
+
+.menu li {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.menu ul li a {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    padding: 3px; 
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a:hover {
+    color: #770000;
+}
+
+img {
+    width: 25%;
+    align-content: center;
+}
+
+.comp li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 3px;
+}
+
+.comp ul li a {
+    margin: 2px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px; 
+    display: inline;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40px;
+}
+
+.comp ul li a:hover {
+    color: #770000;
+}
+
+.sup {
+    font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+    
+    nav {
+        display: flex;
+        max-height: 40%;
+        min-height: 40%;
+        flex-flow: row wrap;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        display: inline-flex;
+        padding: 0px;
+        box-shadow: none; 
+        margin: 0px;
+        align-content: center;
+        justify-content: end;
+        width: 50%;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        width: 50%;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .comp {
+        display: inline-flex;
+        justify-content: center; 
+        align-content: center;
+        width: 100%;
+
+    }
+    .comp ul {
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+    }
+};

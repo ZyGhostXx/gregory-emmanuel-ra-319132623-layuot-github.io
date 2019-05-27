@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    flex-flow: column wrap;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+#busca {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+#txtbusca {
+    display: flex;
+    align-content: center;
+    border: 0px solid #222;
+    background: #EEE;
+    width: 280px;
+    height: 30px;
+    margin: 0px;
+    padding: 5px 0 5px 5px;
+    float: left;
+    line-height: 36px; 
+}
+
+#btnBusca {
+    display: flex;
+    align-content: center;
+    background: #00cccc;
+    position: relative;
+    border: 0px solid #222;
+    color: #FFF; 
+    margin: 0px;
+    padding: 6px;
+    border: 0 none;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform :uppercase;
+}
+
+#btnBusca:hover {   
+    display: flex;
+    align-content: center;
+    background:#99cccc; 
+}
+
+img {
+    width: 25%;
+    align-content: center;
+}
+
+.comp li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 3px;
+}
+
+.comp ul li a {
+    margin: 2px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    padding: 5px; 
+    display: inline;
+    justify-content: center;
+    align-content: center;
+    margin-left: 30px;
+}
+
+.comp ul li a:hover {
+    color: #770000;
+}
+
+.sup {
+    font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+    
+    nav {
+        max-height: 35%;
+        min-height: 35%;
+        flex-flow: column wrap;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        display: flex;
+        padding: 0px;
+        box-shadow: none; 
+        margin: 0px;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+    }
+    .comp {
+        display: inline-flex;
+        justify-content: center; 
+        align-content: center;
+        width: 100%;
+
+    }
+    .comp ul {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+};
